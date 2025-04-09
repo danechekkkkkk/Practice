@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.auth_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 6px 0px #00000040;
+    background-color: #eae2e2;
+    border-radius: 4px;
+}
+
+form{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+form input{
+    padding: 8px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+form h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form button{
+    padding: 7px;
+    width: 270px;
+    cursor: pointer;
+    background-color: dodgerblue;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+form a {
+    text-decoration: none;
+}
+
+.logout_form{
+    height: 100px;
+}
+
+.message{
+    color: red;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 100px;
+}
+
+.main-content {
+    flex: 3; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-right: 20px; 
+}
+
+.filter-form {
+    flex: 1; 
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.statistics {
+    width: 100%; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px; 
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+
+
+button:hover{
+    background-color: rgb(28, 118, 208);
+    transition: .3s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.clear_button{
+    height: 150px;
+}
+
+.extra_btn{
+    width: 280px;
+}
+
+.clear-sum-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total_sum {
+    margin-left: 20px; 
+    margin-bottom: 40px;
+}
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Остается на месте */
+    z-index: 1; /* Ставим на верх */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включить прокрутку при необходимости */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% сверху и центрирование */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px; /* Ширина */
+
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.edit-btn{
+    display: inline-block;	
+	padding: 0 10px;
+	margin-left: 25px;
+	outline: none;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	height: 17px;
+	font-size: 13px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #444;
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	transition: box-shadow 0.2s;
+}
+
+
+.edit-btn:hover {
+    background-color: #fff;
+	box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.edit-btn:active {
+	background-color: #808080;
+}
